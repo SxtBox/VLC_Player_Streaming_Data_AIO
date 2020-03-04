@@ -1,0 +1,29 @@
+DAILYMOTION.COM
+Link: https://www.dailymotion.com/video/x8ncsw
+
+VIMEO
+Link: https://vimeo.com/308734134
+
+SOUNDCLOUD.COM
+Link: https://soundcloud.com/sxtbox/trc4-megamix-hardcore-2011-re
+
+TWITCH.TV
+https://www.twitch.tv/hotbeatstv
+
+YouTube Single Video
+Title: Korsakoff & Outblast - Unleash the Beast (Angerfist Remix)
+Link: https://www.youtube.com/watch?v=4Dsa31n9EYs
+
+Title: DRS - Live Life Hard (Uptempo)
+Link: https://www.youtube.com/watch?v=6IrO01N9LqM
+
+YouTube  Playlist
+Title: Ultimate Hardcore Megamix TRC4
+Link: https://www.youtube.com/playlist?list=PLxKkYph0URW7m7cMaHq9Df1sjNF38huut
+
+NOTE: IF YOUR PLAYLIS IS WITH [&disable_polymer=true] TO END
+EX: https://www.youtube.com/playlist?list=PLxKkYph0URW7m7cMaHq9Df1sjNF38huut&disable_polymer=true
+
+IF U WANT RENAME TRUE TO FALSE EX: [&disable_polymer=false] OR REMOVE THE [&disable_polymer=true]
+EX: https://www.youtube.com/playlist?list=PLxKkYph0URW7m7cMaHq9Df1sjNF38huut
+

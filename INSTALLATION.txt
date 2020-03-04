@@ -1,0 +1,42 @@
+INSTALLATION:
+
+IF U ARE WINDOWS USER RUN Automatic Installer.bat
+
+[MANUAL]
+
+FILES PATH
+DEFAULT PATH [/lua/playlist]
+
+=> Windows (all users): %Program Files%\VideoLAN\VLC\lua\playlist\
+=> EX: C:\Program Files (x86)\VideoLAN\VLC\lua\playlist
+=> Windows (current user): %APPDATA%\vlc\lua\playlist\  << NEED ADMINISTRATOR PERMISSION
+=> Linux (all users): /usr/lib/vlc/lua/playlist/
+=> Linux (current user): ~/.local/share/vlc/lua/playlist/ << NEED ROOT USER
+=> Mac OS X (all users): /Applications/VLC.app/Contents/MacOS/share/lua/playlist/ (create directories if they don't exist)
+ 
+FILE => browse_window.html
+=> Windows - C:\Program Files\VideoLAN\VLC\lua\http\dialogs
+=> Linux - /usr/share/vlc/lua/http/dialogs
+=> Mac OS X /Applications/VLC.app/Contents/MacOS/share/lua/http/dialogs/
+
+IF U HAVE PROBLEM WITH YOUTUBE GOO TO [INSTALLED]\VideoLAN\VLC\lua\playlist\ DELETE OR RENAME => youtube.luac
+
+‎Create Shortcuts
+FOR HD STREAMS CREATE VLC ‎SHORTCUTS
+
+DRAG AND DROP VLC ICON FROM DESKTOP OR vlc.exe FROM /INSTALLED PATH/ "Create Shortcuts Here" TO DESKTOP NAMED TO "VLC Streaming" OR SOMETHING YOU WANT
+
+Right click on your new Shortcuts and click on preperties
+
+GO TO TARGET PATH: EXAMPLE -> "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"
+SEE SHORTCUTS.png
+TO END PRESS SPACE AND ADD LINES
+ --preferred-resolution=240
+ --preferred-resolution=360
+ --preferred-resolution=480
+ --preferred-resolution=720
+ --preferred-resolution=1080
+
+NOTE: IF FORMAT 1080 DOES NOT WORK TO RETURN TO 720
+
+https://i.gyazo.com/3efb5ed9dd15a2e79c796af3495d54b9.mp4
