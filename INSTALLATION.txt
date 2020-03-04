@@ -38,5 +38,3 @@ TO END PRESS SPACE AND ADD LINES
  --preferred-resolution=1080
 
 NOTE: IF FORMAT 1080 DOES NOT WORK TO RETURN TO 720
-
-https://i.gyazo.com/3efb5ed9dd15a2e79c796af3495d54b9.mp4
