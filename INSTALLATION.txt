@@ -31,10 +31,11 @@ Right click on your new Shortcuts and click on preperties
 GO TO TARGET PATH: EXAMPLE -> "C:\Program Files (x86)\VideoLAN\VLC\vlc.exe"
 SEE SHORTCUTS.png
 TO END PRESS SPACE AND ADD LINES
+   [PREFERRED LIST]
  --preferred-resolution=240
  --preferred-resolution=360
  --preferred-resolution=480
  --preferred-resolution=720
  --preferred-resolution=1080
 
-NOTE: IF FORMAT 1080 DOES NOT WORK TO RETURN TO 720
+ NOTE: IF FORMAT 1080 DOES NOT WORK RETURN TO 720 OR ONE FROM PREFERRED LIST
