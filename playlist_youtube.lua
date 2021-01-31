@@ -1,9 +1,10 @@
 --[[
-
+ $Id$
+ Copyright © 2007-2021 the VideoLAN team
  Youtube playlist importer for VLC media player 1.x 2.x 3.x
-
-  Modified: TRC4 <trc4@usa.com>
-
+ Support links: Video, Live Streams, and Playlists
+ To play videos need youtube.lua
+ Modified: TRC4 <trc4@usa.com>
 --]]
 
 -- Helper function to get a parameter's value in a URL
@@ -31,6 +32,7 @@ function parse()
 		local playlistID = get_url_param( vlc.path, "list" )
 		local videoID = get_url_param( vlc.path, "v" )
 		local playlistURL = "http://www.youtube.com/list_ajax?action_get_list=1&style=xml&list="..playlistID
+-- Example http://www.youtube.com/list_ajax?action_get_list=1&style=xml&list=PLxKkYph0URW6sXcCj8JhBR_ghHhD6qUAa
 
 		while true do
 			playlistData = ""
@@ -61,6 +63,7 @@ function parse()
 				if video.encrypted_id 
 				and video.encrypted_id.CDATA then
 					item.path = "http://www.youtube.com/watch?v="..video.encrypted_id.CDATA
+					-- Example <encrypted_id><![CDATA[x4maoo4A3x4]]></encrypted_id>
 				end
 				
 				if video.title 
