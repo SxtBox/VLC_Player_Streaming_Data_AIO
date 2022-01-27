@@ -3,6 +3,9 @@ Twitch.tv playlist parser v0.2.2
 https://gist.github.com/stefansundin/c200324149bb00001fef5a252a120fc2
 https://addons.videolan.org/p/1167220/
 
+STABLE Version Multi Streams
+Example URL: https://www.twitch.tv/pulsradiocom
+
 Usage:
 1. I have included a client_id in this script. If it gets blocked in the future, you can generate your own client at https://www.twitch.tv/settings/connections and replace the one in the client_id variable below.
 2. Put the file in the lua/playlist/ directory:
