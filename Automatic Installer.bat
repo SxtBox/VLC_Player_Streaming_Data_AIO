@@ -14,7 +14,7 @@ echo  ' Email    : TRC4@USA.COM                              '
 echo  ' Website  : KODI.AL                                   '
 echo  ' Version  : 1.0                                       '
 echo  ' Created  : Wednesday, March 4, 2020                  '
-echo  ' Modified : 00:00:0000                                '
+echo  ' Modified : Thursday, January 27, 2022                '
 echo  *------------------------------------------------------*
 echo.
 goto menu
@@ -39,6 +39,7 @@ copy "youtube.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
 copy "vimeo.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
 copy "dailymotion.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
 copy "twitch.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
+copy "twitch_single.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
 copy "twitch-extension.lua" "%ProgramFiles%\VideoLAN\VLC\lua\extensions\"
 copy "soundcloud.lua" "%ProgramFiles%\VideoLAN\VLC\lua\playlist\"
 copy "browse_window.lua" "%ProgramFiles%\VideoLAN\VLC\lua\http\dialogs\"
@@ -51,6 +52,7 @@ copy "youtube.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
 copy "vimeo.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
 copy "dailymotion.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
 copy "twitch.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
+copy "twitch_single.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
 copy "twitch-extension.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\extensions\"
 copy "soundcloud.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\playlist\"
 copy "browse_window.lua" "%ProgramFiles(x86)%\VideoLAN\VLC\lua\http\dialogs\"
