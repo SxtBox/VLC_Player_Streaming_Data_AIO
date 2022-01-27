@@ -1,70 +1,13 @@
 --[[
-Twitch.tv playlist parser v0.2.2
-https://gist.github.com/stefansundin/c200324149bb00001fef5a252a120fc2
-https://addons.videolan.org/p/1167220/
+ $Id$
+ Copyright © 2007-2022 the VideoLAN team
+ Twitch Playlist importer for VLC media player 1.x 2.x 3.x
+ Tested on VLC Player 3.0.16
+ To play videos need to paste twitch_multi.lua in C:\Program Files (x86)\VideoLAN\VLC\lua\playlist
+ Modified: TRC4 <trc4@usa.com>
 
-STABLE Version Multi Streams
-Example URL: https://www.twitch.tv/pulsradiocom
-
-Usage:
-1. I have included a client_id in this script. If it gets blocked in the future, you can generate your own client at https://www.twitch.tv/settings/connections and replace the one in the client_id variable below.
-2. Put the file in the lua/playlist/ directory:
-- On Windows: %APPDATA%/vlc/lua/playlist/
-- On Mac: $HOME/Library/Application Support/org.videolan.vlc/lua/playlist/
-- On Linux: ~/.local/share/vlc/lua/playlist/
-- On Linux (snap package): ~/snap/vlc/current/.local/share/vlc/lua/playlist/
-To install the addon for all users, put the file here instead:
-- On Windows: C:/Program Files (x86)/VideoLAN/VLC/lua/playlist/
-- On Mac: /Applications/VLC.app/Contents/MacOS/share/lua/playlist/
-- On Linux: /usr/lib/vlc/lua/playlist/
-- On Linux (snap package): /snap/vlc/current/usr/lib/vlc/lua/playlist/
-3. Open a twitch.tv url using "Open Network Stream..."
-
-If you are using a Mac and have Homebrew installed, you can download and install with one Terminal command:
-HOMEBREW_NO_SANDBOX=1 brew install --HEAD stefansundin/tap/vlc-twitch
-
-If you are using a Mac without Homebrew, you can still install with one command:
-mkdir -p "$HOME/Library/Application Support/org.videolan.vlc/lua/playlist/"
-curl -o "$HOME/Library/Application Support/org.videolan.vlc/lua/playlist/twitch.lua" https://gist.githubusercontent.com/stefansundin/c200324149bb00001fef5a252a120fc2/raw/twitch.lua
-
-Download and install with one command on Linux:
-mkdir -p ~/.local/share/vlc/lua/playlist/
-curl -o ~/.local/share/vlc/lua/playlist/twitch.lua https://gist.githubusercontent.com/stefansundin/c200324149bb00001fef5a252a120fc2/raw/twitch.lua
-
-Features:
-- Load up a channel and watch live, e.g.: https://www.twitch.tv/speedgaming
-- Load an archived video, e.g.: https://www.twitch.tv/videos/113837699
-- Load a collection, e.g.: https://www.twitch.tv/videos/112628247?collection=k2Ou9QRbAhUMPw
-- Load a game and get the top streams, e.g.: https://www.twitch.tv/directory/game/Minecraft
-- Load a game's archived videos, e.g.: https://www.twitch.tv/directory/game/Minecraft/videos/all
-- Load a community and get the top streams, e.g.: https://www.twitch.tv/communities/speedrunning
-- Load a channel's most recent videos, e.g.: https://www.twitch.tv/speedgaming/videos
-- Load a channel's collections, e.g.: https://www.twitch.tv/speedgaming/videos?filter=collections
-- Load the homepage and get a list of featured streams: https://www.twitch.tv/
-- Load Twitch Clips, e.g.: https://clips.twitch.tv/AmazonianKnottyLapwingSwiftRage
-- Load a channel's clips, e.g.: https://www.twitch.tv/speedgaming/videos?filter=clips
-- Load a game's clips, e.g.: https://www.twitch.tv/directory/game/Minecraft/clips
-- Load the next page.
-
-Changelog:
-- v0.2.2: Fix 1080p on archived videos. Add audio only stream.
-- v0.2.1: Skip live videos when loading /<channel>/videos.
-- v0.2.0: Support new URLs. Most things seem to be working again.
-- v0.1.3: Minor fix that prevented me from running this on Ubuntu 18.04 (snap package).
-- v0.1.2: Support for /directory/game/<name>/videos/<type>.
-- v0.1.1: Support for /<channel>/clips, /directory/game/<name>/clips. Add ability to load the next page.
-- v0.1.0: Rewrote almost the whole thing. Support for /communities/<name>, /directory/game/<name>, /<channel>/videos/, collections.
-- v0.0.6: Support new go.twitch.tv urls (beta site).
-- v0.0.5: Fix a couple of minor issues.
-- v0.0.4: Support new twitch.tv/videos/ urls.
-- v0.0.3: Support for Twitch Clips.
-- v0.0.2: You can now pick the stream quality you want. The twitch URL will expand to multiple playlist items.
-
-Handy references:
-https://dev.twitch.tv/docs/v5
-https://www.videolan.org/developers/vlc/share/lua/README.txt
-https://wiki.videolan.org/Documentation:Building_Lua_Playlist_Scripts/
-https://github.com/videolan/vlc/blob/7f6786ab6c8fb624726a63f07d79c23892827dfb/share/lua/playlist/appletrailers.lua#L34
+ STABLE Version Multi Streams
+ Example URL: https://www.twitch.tv/pulsradiocom
 --]]
 
 function json_dump(t)
