@@ -27,3 +27,4 @@ MP3 PLAYER
 # TWITCH TV
 
 LIVE STREAM PLAYER
+Navigate to /Screenshots/ For Single/Multi Streams Detail
