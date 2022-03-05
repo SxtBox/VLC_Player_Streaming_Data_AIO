@@ -1,5 +1,5 @@
 # AIO Streaming For VLC Player
-LUA Streaming Sripting
+LUA Streaming Scripting
 
 # SUPPORT SITES
 
